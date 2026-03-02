@@ -32,6 +32,21 @@ function song_village_remove_single_product_elements() {
 add_action( 'wp', 'song_village_remove_single_product_elements' );
 
 /**
+ * Output product description inside the summary, above the add-to-cart (priority 30).
+ */
+function song_village_output_product_description() {
+    global $product;
+    if ( ! $product ) {
+        return;
+    }
+    $description = $product->get_description();
+    if ( $description ) {
+        echo '<div class="product-description">' . wp_kses_post( wpautop( $description ) ) . '</div>';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'song_village_output_product_description', 25 );
+
+/**
  * Hide Stripe Express Checkout (Apple Pay / Google Pay) on single product pages.
  * It remains enabled on the checkout page.
  */
