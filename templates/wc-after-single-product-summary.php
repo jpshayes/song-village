@@ -4,4 +4,4 @@
  * Social share removed intentionally.
  */
 ?>
-<div class="fusion-clearfix">lala</div>
+<div class="fusion-clearfix"></div>
