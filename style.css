@@ -124,6 +124,7 @@ Text Domain:  Avada
 	margin-bottom: 0;
 	font-weight: 400;
 	cursor: pointer;
+  margin-left: 0.25rem;
 }
 
 #nf-form-2-cont input[type="checkbox"],
@@ -186,5 +187,6 @@ Text Domain:  Avada
 	cursor: pointer;
 	border: none;
 	border-radius: 4px;
+	background-color: #adb59a;
 	transition: background-color 0.2s ease, opacity 0.2s ease;
 }
