@@ -9,11 +9,11 @@ Text Domain:  Avada
 */
 
 /* =========================================
-   Ninja Forms — #nf-form-2-cont
+   Ninja Forms — .nf-form-content
    ========================================= */
 
 /* --- Form shell --- */
-#nf-form-2-cont form {
+.nf-form-content form {
 	display: block;
 	width: 100%;
 	margin: 0;
@@ -21,25 +21,25 @@ Text Domain:  Avada
 }
 
 /* "Fields marked with * are required" notice */
-#nf-form-2-cont .nf-form-fields-required {
+.nf-form-content .nf-form-fields-required {
 	font-size: 0.875rem;
 	margin-bottom: 1.25rem;
 }
 
-#nf-form-2-cont .ninja-forms-req-symbol {
+.nf-form-content .ninja-forms-req-symbol {
 	color: #cc0000;
 }
 
 /* --- Field containers --- */
-#nf-form-2-cont .nf-field-container {
+.nf-form-content .nf-field-container {
 	margin-bottom: 1.25rem;
 }
 
 /* --- Labels ---
    <label> is used on text/select/textarea fields.
    <span class="nf-label-span"> is used on radio/checkbox groups and HTML fields. */
-#nf-form-2-cont .nf-field-label label,
-#nf-form-2-cont .nf-field-label .nf-label-span {
+.nf-form-content .nf-field-label label,
+.nf-form-content .nf-field-label .nf-label-span {
 	display: block;
 	margin-bottom: 0.375rem;
 	font-weight: 600;
@@ -48,15 +48,15 @@ Text Domain:  Avada
 }
 
 /* --- Text inputs, email, tel, textarea, select --- */
-#nf-form-2-cont input[type="text"],
-#nf-form-2-cont input[type="email"],
-#nf-form-2-cont input[type="tel"],
-#nf-form-2-cont input[type="number"],
-#nf-form-2-cont input[type="url"],
-#nf-form-2-cont input[type="password"],
-#nf-form-2-cont input[type="date"],
-#nf-form-2-cont textarea,
-#nf-form-2-cont select {
+.nf-form-content input[type="text"],
+.nf-form-content input[type="email"],
+.nf-form-content input[type="tel"],
+.nf-form-content input[type="number"],
+.nf-form-content input[type="url"],
+.nf-form-content input[type="password"],
+.nf-form-content input[type="date"],
+.nf-form-content textarea,
+.nf-form-content select {
 	display: block;
 	width: 100%;
 	padding: 0.625rem 0.875rem;
@@ -72,33 +72,33 @@ Text Domain:  Avada
 	appearance: none;
 }
 
-#nf-form-2-cont input[type="text"]:focus,
-#nf-form-2-cont input[type="email"]:focus,
-#nf-form-2-cont input[type="tel"]:focus,
-#nf-form-2-cont input[type="number"]:focus,
-#nf-form-2-cont input[type="url"]:focus,
-#nf-form-2-cont input[type="password"]:focus,
-#nf-form-2-cont input[type="date"]:focus,
-#nf-form-2-cont textarea:focus,
-#nf-form-2-cont select:focus {
+.nf-form-content input[type="text"]:focus,
+.nf-form-content input[type="email"]:focus,
+.nf-form-content input[type="tel"]:focus,
+.nf-form-content input[type="number"]:focus,
+.nf-form-content input[type="url"]:focus,
+.nf-form-content input[type="password"]:focus,
+.nf-form-content input[type="date"]:focus,
+.nf-form-content textarea:focus,
+.nf-form-content select:focus {
 	outline: none;
 	border-color: #0073aa;
 	box-shadow: 0 0 0 3px rgba(0, 115, 170, 0.15);
 }
 
-#nf-form-2-cont input::placeholder,
-#nf-form-2-cont textarea::placeholder {
+.nf-form-content input::placeholder,
+.nf-form-content textarea::placeholder {
 	color: #999;
 	opacity: 1;
 }
 
-#nf-form-2-cont textarea {
+.nf-form-content textarea {
 	min-height: 120px;
 	resize: vertical;
 }
 
 /* Custom select arrow */
-#nf-form-2-cont select {
+.nf-form-content select {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-position: right 0.875rem center;
@@ -107,28 +107,28 @@ Text Domain:  Avada
 
 /* --- Radio & checkbox lists ---
    NF renders these as <ul> > <li> with input + label pairs */
-#nf-form-2-cont .nf-field-element ul {
+.nf-form-content .nf-field-element ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-#nf-form-2-cont .nf-field-element ul li {
+.nf-form-content .nf-field-element ul li {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 	margin-bottom: 0.375rem;
 }
 
-#nf-form-2-cont .nf-field-element ul li label {
+.nf-form-content .nf-field-element ul li label {
 	margin-bottom: 0;
 	font-weight: 400;
 	cursor: pointer;
   margin-left: 0.25rem;
 }
 
-#nf-form-2-cont input[type="checkbox"],
-#nf-form-2-cont input[type="radio"] {
+.nf-form-content input[type="checkbox"],
+.nf-form-content input[type="radio"] {
 	flex-shrink: 0;
 	width: auto;
 	margin: 0;
@@ -138,7 +138,7 @@ Text Domain:  Avada
 }
 
 /* --- Field description text --- */
-#nf-form-2-cont .nf-field-description {
+.nf-form-content .nf-field-description {
 	font-size: 0.875rem;
 	color: #666;
 	margin-top: 0.375rem;
@@ -146,7 +146,7 @@ Text Domain:  Avada
 }
 
 /* --- Divider (HR field) --- */
-#nf-form-2-cont hr.ninja-forms-field {
+.nf-form-content hr.ninja-forms-field {
 	border: none;
 	border-top: 1px solid #ddd;
 	margin: 1.5rem 0;
@@ -155,30 +155,30 @@ Text Domain:  Avada
 /* --- Validation errors ---
    The error wrapper class is .nf-error-wrap (not .nf-error-msg).
    When a field is invalid, NF adds .nf-error to the container. */
-#nf-form-2-cont .nf-field-container.nf-error input[type="text"],
-#nf-form-2-cont .nf-field-container.nf-error input[type="email"],
-#nf-form-2-cont .nf-field-container.nf-error input[type="tel"],
-#nf-form-2-cont .nf-field-container.nf-error textarea,
-#nf-form-2-cont .nf-field-container.nf-error select {
+.nf-form-content .nf-field-container.nf-error input[type="text"],
+.nf-form-content .nf-field-container.nf-error input[type="email"],
+.nf-form-content .nf-field-container.nf-error input[type="tel"],
+.nf-form-content .nf-field-container.nf-error textarea,
+.nf-form-content .nf-field-container.nf-error select {
 	border-color: #cc0000;
 }
 
-#nf-form-2-cont .nf-error-wrap.nf-error {
+.nf-form-content .nf-error-wrap.nf-error {
 	color: #cc0000;
 	font-size: 0.8125rem;
 	margin-top: 0.25rem;
 }
 
 /* --- Form-level error summary --- */
-#nf-form-2-cont .nf-form-errors {
+.nf-form-content .nf-form-errors {
 	margin-bottom: 1rem;
 	color: #cc0000;
 	font-size: 0.9375rem;
 }
 
 /* --- Submit button --- */
-#nf-form-2-cont input[type="submit"],
-#nf-form-2-cont button[type="submit"] {
+.nf-form-content input[type="submit"],
+.nf-form-content button[type="submit"] {
 	display: inline-block;
 	padding: 0.625rem 1.5rem;
 	font-size: 1rem;
